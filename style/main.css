@@ -1,0 +1,263 @@
+@import "../node_modules/bootstrap/scss/functions";
+
+.header {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 5% repeat(2, 45%) 5%;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". logo button ."
+        ". . . ."
+        ". header--title header--imagecontainer ."
+        ". header--intro header--imagecontainer ."
+        ". header--button header--imagecontainer ."
+        ". navigation navigation ."
+        ". . . .";
+        padding: 25px;
+}
+
+.logo {
+    grid-area: logo;
+    align-self: end;
+}
+
+.button {
+    justify-self: end;
+    align-self: end;
+}
+
+.header--title {
+    grid-area: header--title;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-self: center;
+}
+
+.header--intro {
+    grid-area: header--intro;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-content: center;
+}
+
+.header--button {
+    grid-area: header--button;
+    padding-left: 10%;
+}
+
+.header--imagecontainer {
+    grid-area: header--imagecontainer;
+    margin-top: -5%;
+}
+
+.navigation {
+    grid-area: navigation;
+    align-self: end;
+    margin-left: 3%;
+}
+
+a.navigation--link {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/* страничка с возможностями */
+.capabilities {
+    display: grid;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 5% 10% repeat(2, 18% 8%) 18% 10% 5%;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". logo . . . . button button ."
+        ". . capabilitiess--title capabilities--title capabilities--title . . . ."
+        ". . capabilities--box1 . capabilities--box2 . capabilities--box3 . ."
+        ". . . . . . . . ."
+        ". . capabilities--box4 . capabilities--box5 . capabilities--box6 . ."
+        ". navigation navigation navigation navigation navigation navigation . ."
+        ". . . . . . . . .";
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.button {
+    grid-area: button;
+}
+
+.capabilities--title {
+    grid-area: capabilities--title;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-self: center;
+}
+
+.capabilities--box1 {
+    grid-area: capabilities--box1;
+}
+
+.capabilities--box2 {
+    grid-area: capabilities--box2;
+}
+
+.capabilities--box3 {
+    grid-area: capabilitiess--box3;
+}
+
+.capabilities--box4 {
+    grid-area: capabilities--box4;
+}
+
+.capabilities--box5 {
+    grid-area: capabilities--box5;
+}
+
+.capabilities--box6 {
+    grid-area: capabilities--box6;
+    color: white;
+    background-color: #EC615B;
+    padding-left: 5%;
+}
+
+.button_size-m {
+    margin-left: 10%;
+}
+
+.navigation {
+    grid-area: navigation;
+    align-self: end;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    font-weight: 900;
+    font-size: 3.375em;
+    text-align: left;
+}
+
+h1.capabilities--title {
+    font-weight: 700;
+    font-size: 2.625em;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 0px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 160%;
+    text-align: left;
+}
+
+p.header--intro {
+    font-size: 1.875em;
+}
+
+a.navigation--link {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 160%;
+    text-align: left;
+    text-decoration: none;
+    color: #5222D0;
+    padding: 30px;
+}
+
+#capabilities-navigation {
+    color: #000000;
+}
+
+.subscribe--emal {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 160%;
+    text-align: left;
+}
+
+/* кнопки */
+.button-size-s,
+.button-size-m,
+.button-size-l {
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: #5222D0;
+    box-shadow: 0px 4px 4px rgba(17, 8, 8, 0.25);
+    margin: auto;
+}
+
+.button-size-s {
+    width: 135px;
+    height: 38px;
+    font-size: 0.875em;
+}
+
+.button-size-m {
+    width: 155px;
+    height: 38px;
+    font-size: 0.875em;
+}
+
+.button-size-l {
+    width: 270px;
+    height: 84px;
+    font-size: 2.1875em;
+}
+
+/* картинки */
+.logo-img {
+    max-width: 100%;
+}
+
+.header-img {
+    max-width: 100%;
+}
+
+.capabilities--img {
+    max-width: 100%;
+}
+
+.button-icon {
+    height: 70%;
+    padding-left: 5px;
+}
+
+.button-bigicon {
+    height: 45%;
+    padding-left: 5px;
+}
+
+/* емайл */
+.subscribe--emal {
+    width: 90%;
+    margin: 5% 5% 5% 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
